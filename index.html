@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#130b19">
+  <title>For Eruma (Harini) ♡ Birthday Surprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="progress" id="progress"></div>
+  <div class="music-pill">
+    <span class="music-dot"></span><span id="musicLabel">Birthday mode</span>
+    <button id="musicToggle" class="tiny-button" aria-label="Toggle background music">♫</button>
+  </div>
+  <audio id="bgMusic" src="audio/birthday-music.mp3" loop preload="none"></audio>
+
+  <main>
+    <section id="gate" class="gate">
+      <div class="gate-stars" aria-hidden="true">✦　·　✧　·　✦</div>
+      <div class="gate-card">
+        <div class="eyebrow">A birthday surprise for Eruma (Harini)</div>
+        <div class="gift-illustration" aria-hidden="true"><span>🎁</span><i>✦</i></div>
+        <p class="script">For my special friend</p>
+        <h1>One tiny code.<br><em>One big surprise.</em></h1>
+        <p class="gate-copy">Namma friendship, namma memories, and a birthday wish — just for you.</p>
+        <form id="unlockForm">
+          <label class="sr-only" for="secretCode">Secret code</label>
+          <input id="secretCode" type="password" inputmode="numeric" placeholder="Enter your secret code" autocomplete="off">
+          <button class="button button-primary" type="submit">Open your surprise <span>↗</span></button>
+          <p id="gateError" class="gate-error" aria-live="polite"></p>
+        </form>
+        <div class="gate-foot">Made especially for Eruma (Harini) ♡</div>
+      </div>
+    </section>
+
+    <div id="site" hidden>
+      <section class="hero" id="top">
+        <div class="hero-grain"></div>
+        <div class="hero-content reveal">
+          <div class="eyebrow"><span class="line"></span> NOVEMBER 10 <span class="line"></span></div>
+          <p class="hero-kicker">Nee enakku appovum, ippovum, eppovum special dhaan.</p>
+          <h1>Happy Birthday,<br><em>Eruma (Harini).</em></h1>
+          <p class="hero-note" id="heroTyping"></p><p class="birthday-date">NOVEMBER 10 · YOUR DAY ✦</p>
+          <a class="scroll-cue" href="#memories"><span class="scroll-icon">↓</span> Namma memories</a>
+        </div>
+        <div class="hero-photo" role="img" aria-label="Birthday memory photo"></div>
+        <div class="hero-number">01 <span>/ A SPECIAL DAY</span></div>
+      </section>
+
+      <section class="intro section-wrap reveal">
+        <p class="section-label">NAMMA STORY</p>
+        <h2>Normal friends-lendhu<br><em>best friends aana story.</em></h2>
+        <p class="intro-text">BEEE sir moolama start aana namma friendship, crib decoration, daily gossip, personal talks, happy moments, pain share pannadhu-nu konjam konjam-ah best friendship-a maariduchu. Indha memories ellam enakku romba special.</p>
+        <div class="signature-line">Nee enakku eppovum special dhaan <span>♡</span></div>
+      </section>
+
+      <section class="memories section-wrap" id="memories">
+        <div class="section-heading reveal"><div><p class="section-label">NAMMA MEMORIES</p><h2>Konjam gossip,<br><em>neraya memories.</em></h2></div><p class="heading-aside">Normal friends-lendhu best friends.<br>Andha journey marakka mudiyadhu.</p></div>
+        <div class="memory-grid">
+          <article class="memory-card tall reveal"><img src="images/us1.jpg" alt="Our friendship memory" loading="lazy"><div class="memory-caption"><span>01 — OUR FRIENDSHIP</span><h3>Namma first memories.</h3></div></article>
+          <article class="memory-card reveal"><img src="images/us2.jpg" alt="A funny memory together" loading="lazy"><div class="memory-caption"><span>02 — DAILY GOSSIP</span><h3>Namma random talks. 😂</h3></div></article>
+          <article class="memory-card reveal"><img src="images/us3.jpg" alt="A happy memory together" loading="lazy"><div class="memory-caption"><span>03 — CRIB DECORATION</span><h3>Serndhu pannom. 😌</h3></div></article>
+          <article class="memory-card reveal"><img src="images/us4.jpg" alt="A comforting memory together" loading="lazy"><div class="memory-caption"><span>04 — LOWVA IRUNDHA NERAM</span><h3>Nee en kooda irundha.</h3></div></article>
+          <article class="memory-card wide reveal"><img src="images/us5.jpg" alt="A memory together" loading="lazy"><div class="memory-caption"><span>05 — SPECIAL MEMORIES</span><h3>Namma memories. ❤️</h3></div></article>
+          <article class="memory-card reveal"><img src="images/us6.jpg" alt="A good vibes memory" loading="lazy"><div class="memory-caption"><span>06 — APPovum, IPPOVUM</span><h3>Nee enakku special dhaan.</h3></div></article>
+        </div>
+        <p class="photo-tip">Your photos go here — keep the filenames, and replace the sample images inside the <code>images</code> folder.</p>
+      </section>
+
+      <section class="journey">
+        <div class="section-wrap">
+          <div class="section-heading reveal"><div><p class="section-label">EVERY VERSION OF YOU</p><h2>Your own little <em>universe.</em></h2></div><p class="heading-aside">Baby days to birthday queen.<br>Every version is precious.</p></div>
+          <div class="journey-grid">
+            <article class="journey-card reveal"><img src="images/baby.jpg" alt="Harini childhood photo" loading="lazy"><div><span>THE BEGINNING</span><h3>Little Eruma 👶</h3><p>Small hands, a whole lot of magic.</p></div></article>
+            <article class="journey-card reveal"><img src="images/purple.jpg" alt="Harini in purple" loading="lazy"><div><span>HARINI</span><h3>Un style, un smile.</h3><p>Some colours just belong to you.</p></div></article>
+            <article class="journey-card reveal"><img src="images/mint.jpg" alt="Harini in mint" loading="lazy"><div><span>UN SMILE</span><h3>Keep smiling.</h3><p>Bringing your own kind of light.</p></div></article>
+            <article class="journey-card reveal"><img src="images/flowerdress.jpg" alt="Birthday outfit" loading="lazy"><div><span>BIRTHDAY GIRL</span><h3>Happy Birthday, Eruma!</h3><p>The world is your little runway.</p></div></article>
+            <article class="journey-card reveal"><img src="images/saree.jpg" alt="Harini in a saree" loading="lazy"><div><span>NOVEMBER 10</span><h3>Un day, un happiness.</h3><p>Queen energy, every single time.</p></div></article>
+            <article class="journey-card reveal"><img src="images/smile.jpg" alt="Harini smiling" loading="lazy"><div><span>NAMMA MEMORIES</span><h3>Andha smile. ❤️</h3><p>That smile could fix a whole day.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portrait-section section-wrap reveal">
+        <p class="section-label">NO CAPTION NEEDED</p>
+        <div class="portrait-frame"><img src="images/eye-photo.jpg" alt="A special portrait memory" loading="lazy"><span class="frame-corner top-left"></span><span class="frame-corner bottom-right"></span></div>
+        <h2>Some memories are<br><em>felt, not explained.</em></h2>
+        <p>And some people will always mean a little more.</p>
+      </section>
+
+      <section class="letter-section">
+<div class="letter-wrap">
+<div class="letter-side"><p class="section-label">A FEW WORDS FROM ME</p><h2>Dear you,<br><em>keep shining.</em></h2><p>Because friends deserve to hear how much they matter, too.</p><div class="letter-stamp">WITH CARE<br>✦ ALWAYS</div></div>
+<article class="letter-paper">
+<div class="letter-top"><span>A LETTER FOR YOU</span><span>WITH CARE ✦</span></div>
+<h3>Hey, birthday star! ❤️</h3>
+<p>First of all, <strong>Happy Birthday!</strong> 🥳✨</p>
+<p>Nammoda friendship start aanathu BEEE sir moolama dhaan. Appo andha vishayam enakku sariya puriyala; aana ippo thirumbi yosikkumbodhu, andha chinna beginning namma friendship-ku evlo special-aana start-nu puriyuthu.</p>
+<p>Apram crib decoration-ku serndhu work pannom. Konjam konjam-ah pesi, chinna chinna vishayangal share panni, normal friends-la irundhu best friends-a maarinom. Daily gossip, random talks, sirippu, namma problems and pain — ellathayum share panna aarambichom. Ippo andha moments ellam enakku romba precious.</p>
+<p>Naan low-va irukkumbodhu en kooda irundhavanga neraya per illa. Aana nee irundha. Adhu enakku romba meaningful. Naan enna feel panren, enna nadakkuthunu, enna pathi un kitta open-ah share panna mudiyuthu. Idhuvaraikkum naan yaar kittayum sollaadha sila vishayangalai kooda un kitta sollirukken. Un kitta naan real-ah irukka mudiyuthu-nu feel panren. Maybe adhanaala dhaan namma friendship enakku innum emotional-ah special aayiduchu.</p>
+<p>Un life-la nee neraya hurt aagirukka; neraya things face pannirukka. Aana andha pain un strength-ah maarattum. Unna easy-ah yaarayum namba vechidaadha; un personal vishayangalai yaar kittayum share panradhukku munnaadi, avanga un trust-ku worth-ah irukkaangala-nu paaru. Nee low-va irundhaalum, un feelings-ai hide pannanum-nu illa — aana un worth-ai marandhudaadha. Unna vittu pona people-kitta un happiness-ai tie panni vechikaadha. Inime un kooda irukkura, unakku nalladhu ninaikkura people-ai appreciate pannu; most importantly, unna neeye care pannikko.</p>
+<p>Sometimes naan yosippen — naan unakku evlo important-nu enakku theriyala. Maybe naan just oru friend-a irukkalaam; naan romba pesuradhu unakku pudikkudha illaya-nu kooda enakku theriyadhu. Sila neram naan unakku thollaiya irukkeno-nu kooda thonum. Aana en side-la irundhu sollanum-na, nee enakku romba important. Athey maathiri, naan unakku evlo special-nu enakku theriyama irukkalaam. Aana nee enakku appovum, ippovum, eppovum special dhaan. ❤️</p>
+<p>Naan happy-ah irundha first call panna thonra person nee. Sad-ah irundha, yosikkaama call panna thonra person-um nee dhaan. Adhu unakku naan evlo close-ah feel panren-nu sollum. Namma friendship eppadi change aanaalum, indha memories-um nee en life-la irundha place-um enakku special-ah dhaan irukkum. ❤️</p>
+<p>Once again, <strong>Happy Birthday, eruma! 😂❤️</strong> Past is past. Inime un life-ai unakkaga pudhusa start pannu. Unna neeye care pannu, un peace-ku importance kudu, unnecessary tension eduthukkaadha. Ellaar kitteyum same expectations vechikaama, un happiness-aiyum dreams-aiyum first place-la vai.</p>
+<p>Indha year unakku happiness, peace, growth, good memories, and neraya reasons to smile kondu varattum. Nee deserve panra nalla vishayangal ellam un life-la nadakkanum. Be happy, be safe, and keep being you. ✨</p>
+<p class="letter-ending">Happy Birthday, Eruma! ❤️</p>
+<div class="signature">— From one of your friends, Kamal ✦</div>
+</article></div></section>
+
+      <section class="gift-section section-wrap reveal">
+        <p class="section-label">ONE LAST LITTLE SURPRISE</p><h2>There's a gift<br><em>with your name on it.</em></h2>
+        <p class="gift-sub">It's not wrapped in paper. Tap to open it.</p>
+        <button class="big-gift" id="giftButton" aria-label="Open your birthday gift"><span>🎁</span><i>✦</i></button>
+        <div id="giftReveal" class="gift-reveal" hidden>
+          <div class="gift-hearts">♡　♥　♡</div><p class="section-label">UNAKKAGA ORU WISH</p>
+          <h3>Past is past.<br><em>Start fresh for you.</em></h3>
+          <p>Inime un life-ai unakkaga start pannu. Unna neeye care pannikko. Indha year full-ah happy-ah, peaceful-ah iru. Nee enakku appovum, ippovum, eppovum special dhaan. ❤️</p>
+          <button id="confettiButton" class="button button-primary">Celebrate you ✨</button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-star">✦</div><p class="section-label">PAST IS PAST</p><h2>Happy Birthday,<br><em>Eruma (Harini).</em></h2>
+        <p>Happy-ah iru, peace-ah iru, unna neeye care pannikko. ❤️</p>
+        <div class="footer-heart">♡</div><small>Made with care, just for you · November 10</small>
+        <a href="#top" class="back-top">BACK TO THE TOP ↑</a>
+      </footer>
+    </div>
+  </main>
+  <div id="confettiLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
