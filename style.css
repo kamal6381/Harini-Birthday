@@ -60,3 +60,11 @@ button{touch-action:manipulation}
 .journey-card img {
   height: 340px;
 }
+
+
+/* Birthday video gallery */
+.video-gallery{padding-top:30px;padding-bottom:110px}
+.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.video-card{overflow:hidden;border:1px solid #dfbd7c55;border-radius:14px;background:#191322;box-shadow:0 12px 35px #0005}
+.video-card video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#08070b}
+@media(max-width:560px){.video-grid{grid-template-columns:1fr;gap:14px}.video-gallery{padding-bottom:75px}}
